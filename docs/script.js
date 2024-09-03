@@ -63,6 +63,71 @@ function convert() {
     };
 
     reader.readAsArrayBuffer(file);
-    
+
+}
+
+function DL_x() {
+
+    const output1 = document.getElementById('output1');
+
+    var text = output1.value;
+
+    var filename = "x.txt";
+
+    var blob = new Blob([text], { type: "text/plain" });
+    if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+        // For IE browser
+        window.navigator.msSaveOrOpenBlob(blob, filename);
+    } else {
+        // For other browsers
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = filename;
+        link.click();
+    }
+
+}
+
+function DL_y() {
+
+    const output2 = document.getElementById('output2');
+
+    var text = output2.value;
+
+    var filename = "y.txt";
+
+    var blob = new Blob([text], { type: "text/plain" });
+    if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+        // For IE browser
+        window.navigator.msSaveOrOpenBlob(blob, filename);
+    } else {
+        // For other browsers
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = filename;
+        link.click();
+    }
+
+}
+
+function DL_z() {
+
+    const output3 = document.getElementById('output3');
+
+    var text = output3.value;
+
+    var filename = "z.txt";
+
+    var blob = new Blob([text], { type: "text/plain" });
+    if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+        // For IE browser
+        window.navigator.msSaveOrOpenBlob(blob, filename);
+    } else {
+        // For other browsers
+        const link = document.createElement('a');
+        link.href
+
+    }
+
 }
 
