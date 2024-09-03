@@ -125,8 +125,9 @@ function DL_z() {
     } else {
         // For other browsers
         const link = document.createElement('a');
-        link.href
-
+        link.href = URL.createObjectURL(blob);
+        link.download = filename;
+        link.click();
     }
 
 }
