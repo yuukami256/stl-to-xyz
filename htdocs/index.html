@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STL File Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>STL File Converter</h1>
+
+        <div class="input-group">
+            <label for="input1">バイナリ形式のSTLを選択してください。</label>
+            <input type="file" id="input1" accept=".stl">
+        </div>
+
+        <button class="btn" onclick="convert()">Convert</button>
+        <p id="message">Press convert to begin.</p>
+
+        <hr>
+
+        <div class="output-group">
+            <label for="output1">X:</label>
+            <textarea id="output1" readonly></textarea>
+        </div>
+
+        <div class="output-group">
+            <label for="output2">Y:</label>
+            <textarea id="output2" readonly></textarea>
+        </div>
+
+        <div class="output-group">
+            <label for="output3">Z:</label>
+            <textarea id="output3" readonly></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
